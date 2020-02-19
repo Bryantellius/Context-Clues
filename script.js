@@ -25,12 +25,13 @@ window.addEventListener('load', function(){
         function outer(i){
             return function displayAlert(){
                 var name = i%5;
-                var item = i%10;
-                var place = i%20;
-                // alert('Accusation '+index+': I accuse '+friends[index]+', with the '
-                // +weapons[index]+' in the '+locations[index]+'.');
-                console.log('Accusation '+i+': I accuse '+friends[name]+', with the '
+                var item = i%20;
+                var place = i%10;
+                alert('Accusation '+i+': I accuse '+friends[name]+', with the '
                 +weapons[item]+' in the '+locations[place]+'.');
+                // console.log('Accusation '+i+': I accuse '+friends[name]+', with the '
+                // +weapons[item]+' in the '+locations[place]+'.');
+                // console.log(name + ', '+ item + ', '+ place);
             };
         }
 
